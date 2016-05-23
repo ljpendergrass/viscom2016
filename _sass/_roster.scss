@@ -11,6 +11,11 @@
 .roster-name{
 	margin-bottom: .5rem;
 	font-weight: bold;
+	position: absolute;
+	width: 100%;
+	top: 50%;
+	background: rgba(113, 178, 209, 0.2);
+	color: white;
 	& a{
 		font-decoration: none;
 	}
@@ -21,10 +26,10 @@
 	display: flex;
 	flex: 0 0 25%;
 	margin: 0;
-	background-image: url(/logan_hoverstate.gif);
 	background-color: #B8C2C6;
 	background-repeat: no-repeat;
 	background-size: contain;
+	transition: opacity .4s;
 
 	& video{
 		width: 100%;
@@ -34,16 +39,24 @@
 	& a{
 		margin: 0;
 		line-height: 0;
+		overflow: hidden;
+		position: relative;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		text-align: center;
+		cursor: pointer;
+		box-sizing: border-box;
 	}
 
 	&:hover{
+		background-image: url(/viscom2016/logan_hoverstate.gif);
 		& video{
 			opacity: 0;
 		}
 	}
+	& a:hover{
+		opacity: .5;
+	}
 
-}
-
-.roster-name{
-	position:relative;
 }
