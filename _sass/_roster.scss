@@ -1,0 +1,49 @@
+
+// roster
+
+.roster{
+ 	margin: 4rem auto 0 auto;
+	display: flex;
+	flex-wrap: wrap;
+
+}
+
+.roster-name{
+	margin-bottom: .5rem;
+	font-weight: bold;
+	& a{
+		font-decoration: none;
+	}
+
+}
+
+.roster-entry-video{
+	display: flex;
+	flex: 0 0 25%;
+	margin: 0;
+	background-image: url(/logan_hoverstate.gif);
+	background-color: #B8C2C6;
+	background-repeat: no-repeat;
+	background-size: contain;
+
+	& video{
+		width: 100%;
+		margin: 0;
+	}
+
+	& a{
+		margin: 0;
+		line-height: 0;
+	}
+
+	&:hover{
+		& video{
+			opacity: 0;
+		}
+	}
+
+}
+
+.roster-name{
+	position:relative;
+}

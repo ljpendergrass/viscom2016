@@ -8,10 +8,24 @@
 
 	<link rel="stylesheet" href="{{ "/css/main.css" | prepend: site.baseurl }}">
 
+	<!-- jQuery -->
+	<script   src="https://code.jquery.com/jquery-2.2.4.min.js"   integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="   crossorigin="anonymous"></script>
+	<!-- End jQuery -->
+
+	<script>
+		jQuery(document).ready(function($) {  
+		// site preloader -- also uncomment the div in the header and the css style for #preloader
+		$(window).load(function(){
+			$('#preloader').fadeOut('slow',function(){$(this).remove();});
+		});
+		});
+	</script>
+
 	<!-- Google Fonts: Lato -->
 	<link href='https://fonts.googleapis.com/css?family=Lato:400,400italic,700,700italic' rel='stylesheet' type='text/css'>
 	<!-- End Google Fonts -->
 	<link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
 	<link rel="alternate" type="application/rss+xml" title="{{ site.title }}" href="{{ "/feed.xml" | prepend: site.baseurl | prepend: site.url }}">
+
 </head>
 	

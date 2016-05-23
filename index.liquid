@@ -1,0 +1,11 @@
+<h1 style-"margin-top: 68px;">This is our <span class="fw-em">Foreword</span></h1>
+		<p class="attention-grabber">
+		Savant city network BASE jump sentient corrupted artisanal futurity. Convenience store nodality city construct computer singularity youtube rain j-pop geodesic range-rover face forwards apophenia courier warehouse tanto. Weathered grenade stimulate smart-vinyl geodesic warehouse towards hotdog youtube vehicle. Film physical shrine tiger-team geodesic katana Legba alcohol hotdog lights narrative. </p>
+		<h2 class="fw-em alignCenter">Who we are</h2>
+		<section class="roster">
+			{% for entry in site.roster %}
+				{% if case.live %}
+					{% include entry.html %}
+				{% endif %}
+			{% endfor %}
+		</section>

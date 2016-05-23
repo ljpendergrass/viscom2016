@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+
+{% include head.html %}
+
+<body>
+	{% include preloader.html %}
+	<header class="fullwidth">
+		<section class="fullwidth header-video">
+			<div class="fullwidth">
+				<div class="fullwidth fullscreen-bg">
+					<!-- thank you to http://slicejack.com/fullscreen-html5-video-background-css/ -->
+					<video loop muted autoplay poster="img/todo.jpg" class="fullwidth fullscreen-bg__video" loop="">
+						<source src="video/hero.mp4" type="video/mp4">
+						<source src="video/hero.webm" type="video/webm">
+					</video>
+				</div>
+			</div>
+		</section>
+	</header>
+	<main class="fullwidth">
+		{{ content }}
+	</main>
+	</body>
+	</html>
