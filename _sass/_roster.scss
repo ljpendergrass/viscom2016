@@ -47,16 +47,18 @@
 		text-align: center;
 		cursor: pointer;
 		box-sizing: border-box;
+		transition: none;
+		&:hover{
+			opacity: .5;
+			transition: opacity .4s;
+
+		}
 	}
 
 	&:hover{
-		background-image: url(/viscom2016/logan_hoverstate.gif);
 		& video{
 			opacity: 0;
 		}
-	}
-	& a:hover{
-		opacity: .5;
 	}
 
 }

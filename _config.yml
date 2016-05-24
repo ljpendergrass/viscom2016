@@ -23,3 +23,7 @@ markdown: kramdown
 # Ruby shit
 gems:
   - octopress-autoprefixer
+
+collections:
+  roster:
+    output: true

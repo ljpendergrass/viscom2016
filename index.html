@@ -8,22 +8,9 @@ layout: intro
 </p>
 	<h2 class="fw-em alignCenter">Who we are</h2>
 	<section class="roster fullwidth">
-		{% include roster-entry.html %}
-		{% include roster-entry.html %}
-		{% include roster-entry.html %}
-		{% include roster-entry.html %}
-		{% include roster-entry.html %}
-		{% include roster-entry.html %}
-		{% include roster-entry.html %}
-		{% include roster-entry.html %}
-		{% include roster-entry.html %}
-		{% include roster-entry.html %}
-		{% include roster-entry.html %}
-		{% include roster-entry.html %}
-		{% include roster-entry.html %}
-		{% include roster-entry.html %}
-		{% include roster-entry.html %}
-		{% include roster-entry.html %}
-		{% include roster-entry.html %}
-		{% include roster-entry.html %}
+		{% for profile in site.roster %}
+			{% if profile.live %}
+				{% include roster-entry.html %}
+			{% endif %}
+		{% endfor %}
 	</section>
