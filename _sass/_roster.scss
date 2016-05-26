@@ -26,7 +26,7 @@
 	display: flex;
 	flex: 0 0 25%;
 	margin: 0;
-	background-color: #B8C2C6;
+	background-color: #D4D7D8;
 	background-repeat: no-repeat;
 	background-size: contain;
 	transition: opacity .4s;
@@ -37,6 +37,7 @@
 	}
 
 	& a{
+		width: 100%;
 		margin: 0;
 		line-height: 0;
 		overflow: hidden;

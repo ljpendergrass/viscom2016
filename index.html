@@ -3,14 +3,30 @@ layout: intro
 ---
 
 <h1 style="margin-top: 68px;">This is our <span class="fw-em">Foreword</span></h1>
-<p class="attention-grabber">
-	Savant city network BASE jump sentient corrupted artisanal futurity. Convenience store nodality city construct computer singularity youtube rain j-pop geodesic range-rover face forwards apophenia courier warehouse tanto. Weathered grenade stimulate smart-vinyl geodesic warehouse towards hotdog youtube vehicle. Film physical shrine tiger-team geodesic katana Legba alcohol hotdog lights narrative.
-</p>
+<p>
+	For us, our undergraduate years have consituted something much more than just an education &#8212; they have constituted the introduction to our careers. Our Foreword. We hope you'll join us in celebration of design, illustration, art, and camaraderie. We're eager to share our beginning with you!</p>
+
+<p class="alignCenter">Seattle Pacific University<br>
+	<strong>Visual Communication Design Showcase</strong><br>
+	05.25.16 – 06.09.16</p>
+
+	<p class="alignCenter">Seattle Pacific Art Center<br>
+		3 West Cremona St.<br>
+		Seattle, WA
+	</p>
+
+	<p class="alignCenter">
+		<strong>Gallery Opening</strong><br>
+		06.02.16 5 – 7pm
+	</p>
+
 	<h2 class="fw-em alignCenter">Who we are</h2>
 	<section class="roster fullwidth">
 		{% for profile in site.roster %}
-			{% if profile.live %}
-				{% include roster-entry.html %}
-			{% endif %}
+		{% if profile.live %}
+		{% include roster-entry.html %}
+		{% endif %}
 		{% endfor %}
 	</section>
+	<hr>
+	{% include map.html %}
