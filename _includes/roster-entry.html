@@ -1,9 +1,9 @@
 <div class="roster-entry-video" id="{{ profile.user }}">
-	<a href="/roster/{{ profile.user }}.html">
+	<a href="{{ site.baseurl }}/roster/{{ profile.user }}.html">
 		<span class="roster-name alignCenter uppercase">{{ profile.name }}</span>
-			<video loop muted autoplay poster="/roster/{{ profile.user }}/{{ profile.user }}.png">
-				<source src="/roster/{{ profile.user }}/{{ profile.user }}.webm" type="video/webm">
-				<source src="/roster/{{ profile.user }}/{{ profile.user }}.mp4" type="video/mp4">
+			<video loop muted autoplay poster="{{ site.baseurl }}/roster/{{ profile.user }}/{{ profile.user }}.png">
+				<source src="{{ site.baseurl }}/roster/{{ profile.user }}/{{ profile.user }}.webm" type="video/webm">
+				<source src="{{ site.baseurl }}/roster/{{ profile.user }}/{{ profile.user }}.mp4" type="video/mp4">
 			</video>
 	</a>
 </div>
