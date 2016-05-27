@@ -33,7 +33,7 @@
             mapTypeId: google.maps.MapTypeId.ROADMAP,
             styles: [ { "featureType": "landscape", "elementType": "labels", "stylers": [ { "visibility": "off" } ] },{ "featureType": "transit", "elementType": "labels", "stylers": [ { "visibility": "off" } ] },{ "featureType": "poi", "elementType": "labels", "stylers": [ { "visibility": "off" } ] },{ "featureType": "water", "elementType": "labels", "stylers": [ { "visibility": "off" } ] },{ "featureType": "road", "elementType": "labels.icon", "stylers": [ { "visibility": "off" } ] },{ "stylers": [ { "hue": "#00aaff" }, { "saturation": -100 }, { "gamma": 2.15 }, { "lightness": 12 } ] },{ "featureType": "road", "elementType": "labels.text.fill", "stylers": [ { "visibility": "on" }, { "lightness": 24 } ] },{ "featureType": "road", "elementType": "geometry", "stylers": [ { "lightness": 57 } ] } ],
         }
-        var mapElement = document.getElementById('googlmap');
+        var mapElement = document.getElementById('googleMap');
         var map = new google.maps.Map(mapElement, mapOptions);
         var locations = [
 ['SPU Art Center', '3 W Cremona St, Seattle WA 98119', 'undefined', 'undefined', 'undefined', 47.6492859, -122.35805800000003, 'https://mapbuildr.com/assets/img/markers/default.png']
@@ -85,7 +85,7 @@ link = '';            bindInfoWindow(marker, map, locations[i][0], description, 
 }
 </script>
 <style>
-    #googlmap {
+    #googleMap {
         height:400px;
         width:800px;
     }
@@ -100,7 +100,4 @@ link = '';            bindInfoWindow(marker, map, locations[i][0], description, 
     .gm-style-iw a {
         color: #4272db;
     }
-</style>
-
-<div id='googlmap'></div>
-</section>
+</style></section>
