@@ -1,2 +1,16 @@
-.profile-img{
-	margin: 0 1.5rem .75rem 0;
+.profile-video{
+	margin: 0 1.5rem 0 0;
+
+	background-repeat: no-repeat;
+	background-size: contain;
+	width: 200px;
+		& video{
+		width: 100%;
+		margin: 0;
+	}
+	&:hover{
+		& video{
+			opacity: 0;
+		}
+	}
+}

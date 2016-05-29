@@ -3,9 +3,18 @@
 {% include head.html %}
 <body>
 	<header class="fullwidth">
-		<h1 class="fw-em">Foreword</h1>
+		<!-- <h1 class="fw-em h1-halfmargin"><a class="no-underline" href="{{ site.url }}{{ site.baseurl }}/">Foreword</a></h1> -->
+		<h4 class="alignCenter"><a href="{{ site.url }}{{ site.baseurl }}/">Return to Foreword 16</a></h4>
 	</header>
 	<main>
+		<div class="profile-video floatLeft" id="{{ page.user }}">
+			<video loop muted autoplay poster="{{ site.baseurl }}/roster/{{ page.user }}/{{ page.user }}.png">
+				<source src="{{ site.baseurl }}/roster/{{ page.user }}/{{ page.user }}.webm" type="video/webm">
+				<source src="{{ site.baseurl }}/roster/{{ page.user }}/{{ page.user }}.mp4" type="video/mp4">
+			</video>
+</div>
+		<h2 class="no-top-margin">{{ page.name }}</h2>
+		<p>{{ page.intro }}</p>
 		{{ content }}
 	</main>
 </body>
