@@ -10,9 +10,11 @@ title: Foreword 2016
 
 description: Foreword 2016:/ Seattle Pacific University Visual Communications Senior Show
 
-url: "http://localhost:4000" # dev
+# url: "http://localhost:4000" # dev
 # url: "http://www.loganpendergrass.com" # test
-baseurl: "/viscom2016"
+url: "http://foreword16.com" # prod
+# baseurl: "/viscom2016"
+baseurl: "" # prod
 
 # Build settings
 markdown: kramdown

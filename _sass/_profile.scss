@@ -22,15 +22,14 @@
 .profile-interests{
 	font-size: .9em;
 	padding: 0;
-	display: inline;
-	& li{
-		display: inline;
-	}
+	color: #999;
 }
 
 .profile-duotainer{
 	display: flex;
-	margin: 0;
+	margin: 0 auto;
+	padding: 1.5rem;
+	background-color: #E1EEF4;
 }
 
 .profile-img{
@@ -38,10 +37,19 @@
 }
 
 .profile-info{
+	margin: 0;
 	& h2{
 		text-transform: uppercase;
 	}
 	& i{
 		margin: 0;
+	}
+}
+
+.profile-links{
+	display: flex;
+	flex-wrap: wrap;
+	& a{
+		margin: 0 .8rem 0 0;
 	}
 }

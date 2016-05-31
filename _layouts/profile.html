@@ -14,28 +14,26 @@
 						</video>
 					</div>
 					<section class="profile-info">
-					<h2 class="no-top-margin">{{ page.name }}</h2>
-					<ul class="profile-interests">
-						<li><strong>{{ page.int1 }}</strong>,</li>
-						<li><strong>{{ page.int2 }}</strong>,</li> and
-						<li><strong>{{ page.int3 }}</strong></li>
-					</ul>
-					<p><strong>{{ page.name | truncatewords: 1 | remove: "..."}} says:</strong>&nbsp; <em>&ldquo;{{ page.intro }}&rdquo;</em></p>
-					<p>
-						<a class="no-underline" href="mailto:{{ page.email }}"><i class="fa fa-envelope" aria-hidden="true"></i>&nbsp;Email</a>&nbsp;
-						<a class="no-underline" href="{{ page.web }}"><i class="fa fa-globe" aria-hidden="true"></i>&nbsp;Website</a>&nbsp;
-						{% if page.opt1 %}{{ page.opt1 }}{% endif %}
-						{% if page.opt2 %}{{ page.opt2 }}{% endif %}
-						{% if page.opt3 %}{{ page.opt3 }}{% endif %}
-						{% if page.opt4 %}{{ page.opt4 }}{% endif %}
-					</p>
-
+						<h2 class="no-margin">{{ page.name }}</h2>
+						<p class="profile-interests">
+							{{ page.int1 }},
+							{{ page.int2 }}, and
+							{{ page.int3 }}
+						</p>
+						<p><strong>{{ page.name | truncatewords: 1 | remove: "..."}} says:</strong>&nbsp; <em>&ldquo;{{ page.intro }}&rdquo;</em></p>
+						<p class="no-margin profile-links">
+							<a class="no-underline" href="mailto:{{ page.email }}"><i class="fa fa-envelope" aria-hidden="true"></i>&nbsp;Email</a>&nbsp;
+							<a class="no-underline" href="{{ page.web }}"><i class="fa fa-globe" aria-hidden="true"></i>&nbsp;Website</a>&nbsp;
+							{% if page.opt1 %}{{ page.opt1 }}{% endif %}
+							{% if page.opt2 %}{{ page.opt2 }}{% endif %}
+							{% if page.opt3 %}{{ page.opt3 }}{% endif %}
+							{% if page.opt4 %}{{ page.opt4 }}{% endif %}
+							</p>
+					</section>
 				</section>
-
-				</section>
-				<hr class="clearfix no-top-margin">
+				<hr class="clearfix">
 				{{ content }}
-
+				<hr>
 				<p class="alignCenter h1-halfmargin"><a class="no-underline" href="{{ site.url }}{{ site.baseurl }}/">&lt;&nbsp;&lt;&nbsp;&lt;&nbsp;&nbsp;Return to Foreword 16</a></p>
 			</main>
 		</body>
