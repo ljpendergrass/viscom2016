@@ -1,9 +1,10 @@
 .profile-video{
 	margin: 0 1.5rem 0 0;
+	flex: 0 0 250px;
 
 	background-repeat: no-repeat;
 	background-size: contain;
-	width: 200px;
+	width: 250px;
 		& video{
 		width: 100%;
 		margin: 0;
@@ -13,4 +14,20 @@
 			opacity: 0;
 		}
 	}
+}
+
+.profile-interests{
+	padding: 0;
+	display: inline;
+	& li{
+		display: inline;
+	}
+}
+
+.profile-duotainer{
+	display: flex;
+}
+
+.profile-img{
+	width: 20%;
 }

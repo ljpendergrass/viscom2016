@@ -3,19 +3,41 @@
 {% include head.html %}
 <body>
 	<header class="fullwidth">
-		<!-- <h1 class="fw-em h1-halfmargin"><a class="no-underline" href="{{ site.url }}{{ site.baseurl }}/">Foreword</a></h1> -->
-		<h4 class="alignCenter"><a href="{{ site.url }}{{ site.baseurl }}/">Return to Foreword 16</a></h4>
+		<p class="alignCenter h1-halfmargin"><a class="no-underline" href="{{ site.url }}{{ site.baseurl }}/">&lt;&nbsp;&lt;&nbsp;&lt;&nbsp;&nbsp;Return to Foreword 16</a></p>
 	</header>
 	<main>
-		<div class="profile-video floatLeft" id="{{ page.user }}">
-			<video loop muted autoplay poster="{{ site.baseurl }}/roster/{{ page.user }}/{{ page.user }}.png">
-				<source src="{{ site.baseurl }}/roster/{{ page.user }}/{{ page.user }}.webm" type="video/webm">
-				<source src="{{ site.baseurl }}/roster/{{ page.user }}/{{ page.user }}.mp4" type="video/mp4">
-			</video>
-</div>
-		<h2 class="no-top-margin">{{ page.name }}</h2>
-		<p>{{ page.intro }}</p>
-		{{ content }}
-	</main>
-</body>
-</html>
+		<section class="profile-duotainer">
+			<div class="profile-video" id="{{ page.user }}">
+				<video loop muted autoplay poster="{{ site.baseurl }}/roster/{{ page.user }}/{{ page.user }}.png">
+					<source src="{{ site.baseurl }}/roster/{{ page.user }}/{{ page.user }}.webm" type="video/webm">
+						<source src="{{ site.baseurl }}/roster/{{ page.user }}/{{ page.user }}.mp4" type="video/mp4">
+						</video>
+					</div>
+					<section class="profile-info">
+					<h2 class="no-top-margin">{{ page.name }}</h2>
+					<p><ul class="profile-interests">
+						<li><strong>{{ page.int1 }}</strong>,</li>
+						<li><strong>{{ page.int2 }}</strong>,</li> and
+						<li><strong>{{ page.int3 }}</strong></li>
+					</ul>
+					</p>
+					<p><strong>{{ page.name | truncatewords: 1 | remove: "..."}} says:</strong>&nbsp; <em>&ldquo;{{ page.intro }}&rdquo;</em></p>
+					<p class="no-margin">
+						<a class="no-underline" href="mailto:{{ page.email }}"><i class="fa fa-envelope" aria-hidden="true"></i>&nbsp;Email</a>&nbsp;
+						<a class="no-underline" href="{{ page.web }}"><i class="fa fa-globe" aria-hidden="true"></i>&nbsp;Website</a>&nbsp;
+						{% if page.opt1 %}{{ page.opt1 }}{% endif %}
+						{% if page.opt2 %}{{ page.opt2 }}{% endif %}
+						{% if page.opt3 %}{{ page.opt3 }}{% endif %}
+						{% if page.opt4 %}{{ page.opt4 }}{% endif %}
+					</p>
+
+				</section>
+
+				</section>
+				<hr class="clearfix no-top-margin">
+				{{ content }}
+
+				<p class="alignCenter h1-halfmargin"><a class="no-underline" href="{{ site.url }}{{ site.baseurl }}/">&lt;&nbsp;&lt;&nbsp;&lt;&nbsp;&nbsp;Return to Foreword 16</a></p>
+			</main>
+		</body>
+		</html>

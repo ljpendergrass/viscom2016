@@ -30,6 +30,16 @@
 	margin-top: 0;
 }
 
+.no-margin{
+	margin: 0;
+}
+
 .no-underline{
 	text-decoration: none;
+}
+
+.clearfix{
+	clear: both;
+	overflow: auto;
+	zoom: 1;
 }

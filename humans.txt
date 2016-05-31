@@ -1,9 +1,9 @@
 +					portfolio in
 $					info in
 
-Elanor Barosko		baroskoe			
+Elanor Barosko		baroskoe		$	*
 Marissa Dehler		dehlerm			$	*
-Abbie Drake			drakea			$	
+Abbie Drake			drakea			$	*
 Heather Dunmoyer	dunmoyerh		$	+
 Jonathan Duyker		duykerj				
 Josh Edwards		edwardsj		$	+
