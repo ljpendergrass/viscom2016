@@ -14,9 +14,13 @@
 			opacity: 0;
 		}
 	}
+	@media screen and (max-width: 45em){
+		display: none;
+	}
 }
 
 .profile-interests{
+	font-size: .9em;
 	padding: 0;
 	display: inline;
 	& li{
@@ -26,8 +30,18 @@
 
 .profile-duotainer{
 	display: flex;
+	margin: 0;
 }
 
 .profile-img{
 	width: 20%;
+}
+
+.profile-info{
+	& h2{
+		text-transform: uppercase;
+	}
+	& i{
+		margin: 0;
+	}
 }

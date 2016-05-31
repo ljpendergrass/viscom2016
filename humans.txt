@@ -1,21 +1,21 @@
 +					portfolio in
 $					info in
 
-Elanor Barosko		baroskoe		$	*
-Marissa Dehler		dehlerm			$	*
-Abbie Drake			drakea			$	*
-Heather Dunmoyer	dunmoyerh		$	+
-Jonathan Duyker		duykerj				
-Josh Edwards		edwardsj		$	+
-Emma Farnsworth		farnsworthe		$	
-Grace Kim			kimg			$	
-Susannah Lonac		lonacs			$	+
-Stephen Lumpe		lumpes			$	
-Oleg Masnyy			masnyyo			$	*
-Logan Pendergrass	pendergrassl	$	
-Katie Reagan		reagank				
-Madeleine Robertson	robertsonm		$	+?
-Ruth Tse			tser			$	
-Jack Wall			wallj			$	*
-Alec Whitmore		whitmorea		$	*
-Julia Yemelianov	yemelianovj		$	
+√	Elanor Barosko		baroskoe		$	*
+√	Marissa Dehler		dehlerm			$	*
+√	Abbie Drake			drakea			$	*
+√	Heather Dunmoyer	dunmoyerh		$	+
+√	Jonathan Duyker		duykerj				
+√	Josh Edwards		edwardsj		$	+
+√	Emma Farnsworth		farnsworthe		$	
+√	Grace Kim			kimg			$	
+	Susannah Lonac		lonacs			$	+
+	Stephen Lumpe		lumpes			$	
+	Oleg Masnyy			masnyyo			$	*
+	Logan Pendergrass	pendergrassl	$	
+	Katie Reagan		reagank				
+	Madeleine Robertson	robertsonm		$	+?
+	Ruth Tse			tser			$	
+	Jack Wall			wallj			$	*
+	Alec Whitmore		whitmorea		$	*
+	Julia Yemelianov	yemelianovj		$	

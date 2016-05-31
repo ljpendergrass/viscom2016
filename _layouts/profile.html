@@ -15,14 +15,13 @@
 					</div>
 					<section class="profile-info">
 					<h2 class="no-top-margin">{{ page.name }}</h2>
-					<p><ul class="profile-interests">
+					<ul class="profile-interests">
 						<li><strong>{{ page.int1 }}</strong>,</li>
 						<li><strong>{{ page.int2 }}</strong>,</li> and
 						<li><strong>{{ page.int3 }}</strong></li>
 					</ul>
-					</p>
 					<p><strong>{{ page.name | truncatewords: 1 | remove: "..."}} says:</strong>&nbsp; <em>&ldquo;{{ page.intro }}&rdquo;</em></p>
-					<p class="no-margin">
+					<p>
 						<a class="no-underline" href="mailto:{{ page.email }}"><i class="fa fa-envelope" aria-hidden="true"></i>&nbsp;Email</a>&nbsp;
 						<a class="no-underline" href="{{ page.web }}"><i class="fa fa-globe" aria-hidden="true"></i>&nbsp;Website</a>&nbsp;
 						{% if page.opt1 %}{{ page.opt1 }}{% endif %}
