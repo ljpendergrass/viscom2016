@@ -27,6 +27,7 @@
 
 .profile-duotainer{
 	display: flex;
+	flex-wrap: wrap;
 	margin: 0 auto;
 	padding: 1.5rem;
 	background-color: #E1EEF4;
@@ -38,6 +39,7 @@
 
 .profile-info{
 	margin: 0;
+	flex: 1 0 50%;
 	& h2{
 		text-transform: uppercase;
 	}
@@ -50,6 +52,27 @@
 	display: flex;
 	flex-wrap: wrap;
 	& a{
-		margin: 0 .8rem 0 0;
+		margin: 0 .6rem 0 0;
 	}
+	& i{
+		font-size: 1.5rem;
+	}
+}
+
+#profile-extra-container{
+	padding: 1rem;
+	border: 1px solid #6D90A0;
+	flex: 0 0 100%;
+	margin: 1.5rem 0 0 0;
+}
+
+#profile-extra-signal{
+	color: #6D90A0;
+	& i{
+		margin: 0 .75rem;
+	}
+}
+
+#profile-extra{
+	display: none;
 }

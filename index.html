@@ -2,30 +2,33 @@
 layout: intro
 ---
 
-<h1 Class="h1-halfmargin">This is our <span class="fw-em">Foreword</span></h1>
-<p>
-	For us, our undergraduate years have consituted something much more than just an education &#8212; they have constituted the introduction to our careers. Our Foreword. We hope you'll join us in celebration of design, illustration, art, and camaraderie. We're eager to share our beginning with you!</p>
+	<div class="mobile-only-block">
+		<h1>Foreword 2016</h1>
+	<p class="alignCenter"><em>For the best viewing experience possible at this time, please visit this page on desktop.</em></p></div>
 
-<p class="alignCenter">Seattle Pacific University<br>
-	<strong>Visual Communication Design Showcase</strong><br>
+<h1 Class="h1-halfmargin alignCenter">This is our <span class="fw-em">Foreword</span></h1>
+<p>
+	For us, our undergraduate years have consituted something much more than just an education &#8212; they have constituted the introduction to our careers. Our <strong>Foreword</strong>. We hope you'll join us in celebration of design, illustration, art, and camaraderie. We're eager to share our beginning with you!</p>
+
+<div class="box-highlight home-infotainer">
+
+	<p class="home-infoitem alignCenter">Seattle Pacific University<br>
+	VCD Showcase<br>
 	05.25.16 – 06.09.16</p>
 
-	<p class="alignCenter">Seattle Pacific Art Center<br>
+	<p class="home-infoitem alignCenter">Seattle Pacific Art Center<br>
 		3 West Cremona St.<br>
 		Seattle, WA
 	</p>
-
-	<p class="alignCenter">
-		<strong>Gallery Opening</strong><br>
+	<p class="home-infoitem alignCenter">
+		Gallery Opening<br>
 		06.02.16 5 – 7pm
 	</p>
-
+	</div>
 	<h2 class="fw-em alignCenter">Who we are</h2>
 	<section class="roster fullwidth">
 		{% for profile in site.roster %}
-		{% if profile.live %}
 		{% include roster-entry.html %}
-		{% endif %}
 		{% endfor %}
 	</section>
 	<hr>

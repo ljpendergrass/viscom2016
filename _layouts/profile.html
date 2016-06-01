@@ -3,7 +3,11 @@
 {% include head.html %}
 <body>
 	<header class="fullwidth">
-		<p class="alignCenter h1-halfmargin"><a class="no-underline" href="{{ site.url }}{{ site.baseurl }}/">&lt;&nbsp;&lt;&nbsp;&lt;&nbsp;&nbsp;Return to Foreword 16</a></p>
+		<p class="alignCenter h1-halfmargin home-infotainer">
+		<a class="no-underline home-infoitem" href="{{ site.url }}{{ site.baseurl }}/roster/{{ page.prev }}.html">&lt;&nbsp;&lt;&nbsp;&lt;&nbsp;Previous Designer</a>
+		<a class="no-underline home-infoitem" href="{{ site.url }}{{ site.baseurl }}/">Foreword 16</a>
+		<a class="no-underline home-infoitem" href="{{ site.url }}{{ site.baseurl }}/roster/{{ page.next }}.html">Next Designer&nbsp;&gt;&nbsp;&gt;&nbsp;&gt;</a>
+		</p>
 	</header>
 	<main>
 		<section class="profile-duotainer">
@@ -20,21 +24,42 @@
 							{{ page.int2 }}, and
 							{{ page.int3 }}
 						</p>
-						<p><strong>{{ page.name | truncatewords: 1 | remove: "..."}} says:</strong>&nbsp; <em>&ldquo;{{ page.intro }}&rdquo;</em></p>
-						<p class="no-margin profile-links">
-							<a class="no-underline" href="mailto:{{ page.email }}"><i class="fa fa-envelope" aria-hidden="true"></i>&nbsp;Email</a>&nbsp;
-							<a class="no-underline" href="{{ page.web }}"><i class="fa fa-globe" aria-hidden="true"></i>&nbsp;Website</a>&nbsp;
+						<p class="profile-links">
+							<a class="no-underline" href="mailto:{{ page.email }}"><i class="fa fa-envelope" aria-hidden="true"></i></a>
+							<a class="no-underline" href="{{ page.web }}"><i class="fa fa-globe" aria-hidden="true"></i></a>
 							{% if page.opt1 %}{{ page.opt1 }}{% endif %}
 							{% if page.opt2 %}{{ page.opt2 }}{% endif %}
 							{% if page.opt3 %}{{ page.opt3 }}{% endif %}
 							{% if page.opt4 %}{{ page.opt4 }}{% endif %}
 							</p>
+						<p class="no-margin"><strong>{{ page.name | truncatewords: 1 | remove: "..."}} says:</strong>&nbsp; <em>&ldquo;{{ page.intro }}&rdquo;</em></p>
 					</section>
+					{% if page.extra %}
+							<div id="profile-extra-container">
+								<p class="alignCenter no-margin" id="profile-extra-signal">
+									<i class="fa fa-angle-down" aria-hidden="true"></i>
+									More about {{ page.name | truncatewords: 1 | remove: "..."}}
+									<i class="fa fa-angle-down" aria-hidden="true"></i>
+								</p>
+								<p class="no-margin" id="profile-extra">{{ page.extra }}</p>
+							</div>
+					{% endif %}
 				</section>
-				<hr class="clearfix">
 				{{ content }}
-				<hr>
-				<p class="alignCenter h1-halfmargin"><a class="no-underline" href="{{ site.url }}{{ site.baseurl }}/">&lt;&nbsp;&lt;&nbsp;&lt;&nbsp;&nbsp;Return to Foreword 16</a></p>
+				{% if page.live %}<hr class="clearfix">{% endif %}
 			</main>
+			<p class="alignCenter h1-halfmargin home-infotainer">
+		<a class="no-underline home-infoitem" href="{{ site.url }}{{ site.baseurl }}/roster/{{ page.prev }}.html">&lt;&nbsp;&lt;&nbsp;&lt;&nbsp;Previous Designer</a>
+		<a class="no-underline home-infoitem" href="{{ site.url }}{{ site.baseurl }}/">Foreword 16</a>
+		<a class="no-underline home-infoitem" href="{{ site.url }}{{ site.baseurl }}/roster/{{ page.next }}.html">Next Designer&nbsp;&gt;&nbsp;&gt;&nbsp;&gt;</a>
+		</p>
+		<script>
+			$(document).ready(function(){
+				$("#profile-extra-container").click(function(){
+					$("#profile-extra").slideDown("slow");
+					$("#profile-extra-signal").slideUp("slow");
+				});
+			});
+		</script>
 		</body>
 		</html>
